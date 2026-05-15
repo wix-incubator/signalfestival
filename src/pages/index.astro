@@ -20,6 +20,11 @@ import TournamentRegistrationForm from "../components/TournamentRegistrationForm
           <a href="#registration" class="action-primary">Reserve a pass</a>
           <a href="#program" class="action-secondary">View program</a>
         </div>
+        <div class="hero-cues" aria-label="Registration capabilities">
+          <span>Validated fields</span>
+          <span>Structured pass records</span>
+          <span>CRM-ready follow-up</span>
+        </div>
         <dl class="signal-metrics" aria-label="Festival highlights">
           <div>
             <dt>42</dt>
@@ -37,6 +42,11 @@ import TournamentRegistrationForm from "../components/TournamentRegistrationForm
       </div>
 
       <div class="signal-visual" aria-label="Signal Festival pass preview">
+        <div class="signal-frequency" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="visual-topline">
           <span>Live capacity</span>
           <strong>74%</strong>
@@ -60,6 +70,11 @@ import TournamentRegistrationForm from "../components/TournamentRegistrationForm
             <span>Workshop lane</span>
             <strong>Spatial Audio Lab</strong>
           </div>
+        </div>
+        <div class="routing-strip" aria-label="Submission route">
+          <span>Form validated</span>
+          <span>Wix submission</span>
+          <span>/success route</span>
         </div>
         <div class="visual-note">
           Wix Headless captures registrations, segments pass holders by track,
@@ -92,6 +107,12 @@ import TournamentRegistrationForm from "../components/TournamentRegistrationForm
           <p>Use Wix Forms submissions as the source for confirmations, guest lists, and track-aware follow-up.</p>
         </article>
       </div>
+      <div class="program-rail" aria-label="Festival registration flow">
+        <span>Choose track</span>
+        <span>Validate contact</span>
+        <span>Route confirmation</span>
+        <span>Sync CRM list</span>
+      </div>
     </div>
   </section>
 
@@ -104,14 +125,33 @@ import TournamentRegistrationForm from "../components/TournamentRegistrationForm
           This Headless flow keeps the festival front end expressive while Wix
           manages the structured registration data behind the scenes.
         </p>
-        <ul>
-          <li>Pass and track details arrive in Wix Forms.</li>
-          <li>Required fields stay enforced before submission.</li>
-          <li>Success routing is ready for confirmation messaging.</li>
-        </ul>
+        <div class="capability-stack" aria-label="Form capabilities">
+          <div>
+            <span>Validation</span>
+            <strong>Required fields and email format are checked before submit.</strong>
+          </div>
+          <div>
+            <span>Structured submission</span>
+            <strong>Pass, track, access tier, and notes keep their Wix field mapping.</strong>
+          </div>
+          <div>
+            <span>Success routing</span>
+            <strong>Accepted registrations move to a dedicated confirmation page.</strong>
+          </div>
+          <div>
+            <span>CRM-ready</span>
+            <strong>Contact details and preferences arrive together for segmented follow-up.</strong>
+          </div>
+        </div>
       </aside>
 
-      <TournamentRegistrationForm class="signal-registration-form" />
+      <div class="registration-form-wrap">
+        <div class="form-status-strip">
+          <span>Wix Headless Forms</span>
+          <strong>Live submission path</strong>
+        </div>
+        <TournamentRegistrationForm class="signal-registration-form" />
+      </div>
     </div>
   </section>
 </Layout>
