@@ -6,7 +6,7 @@ This website is powered by Wix Headless and built using [wix-headless.dev](https
 
 ## Links
 
-- Live site: [https://signal-fes-6610d912-gonenj.wix-site-host.com](https://signal-fes-6610d912-gonenj.wix-site-host.com)
+- Live site: [https://signalfestival.events/](https://signalfestival.events)
 - Source: [https://github.com/wix-incubator/signalfestival](https://github.com/wix-incubator/signalfestival)
 - Wix site ID: `e06b9151-2f47-469d-aee9-6b625cf8911d`
 
