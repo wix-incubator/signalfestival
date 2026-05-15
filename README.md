@@ -1,33 +1,48 @@
 # Signal Festival
 
-An immersive festival registration site showing structured form submissions, pass selection, validation, and success routing powered by Wix Headless.
+Signal Festival is an immersive event registration site for pass selection, attendee details, structured submissions, validation, and success routing.
 
 This website is powered by Wix Headless and built using [wix-headless.dev](https://www.wix-headless.dev).
 
-## Live Site
+## Links
 
-- [https://signal-fes-6610d912-gonenj.wix-site-host.com](https://signal-fes-6610d912-gonenj.wix-site-host.com)
-
-## Source
-
-- [https://github.com/wix-incubator/signalfestival](https://github.com/wix-incubator/signalfestival)
+- Live site: [https://signal-fes-6610d912-gonenj.wix-site-host.com](https://signal-fes-6610d912-gonenj.wix-site-host.com)
+- Source: [https://github.com/wix-incubator/signalfestival](https://github.com/wix-incubator/signalfestival)
+- Wix site ID: `e06b9151-2f47-469d-aee9-6b625cf8911d`
 
 ## What It Showcases
 
-- Forms experience built as a custom headless website
-- Wix-managed backend capabilities surfaced through a custom Astro front end
-- Public `llms.txt` and `robots.txt` configured through the Wix SEO txt APIs
-- Deployment with `wix release`
+- A custom Astro festival registration flow backed by Wix Forms.
+- Wix-hosted form schema loading with custom event UI rendering.
+- Pass and attendee details submitted through Wix Headless APIs.
+- Branded confirmation routing after submission.
+- Public `robots.txt` and `llms.txt` configured through Wix SEO txt APIs.
+- Deployment with `wix release`.
+
+## Wix Solutions Used
+
+- Wix Headless Site for the managed site/runtime foundation.
+- Wix Forms for festival registration fields and submissions.
+
+## Wix SDKs And Packages
+
+- `@wix/astro`
+- `@wix/astro-pages`
+- `@wix/sdk`
+- `@wix/forms`
 
 ## Local Development
 
+Create a local env file from `.env.example` or run the Wix CLI env setup for the connected site.
+
 ```bash
-yarn install
-yarn dev
+npm install
+npm run dev
 ```
 
-## Build
+## Build And Release
 
 ```bash
-yarn build
+npm run build
+npm run release
 ```
