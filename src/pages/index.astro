@@ -3,15 +3,115 @@ import Layout from "../layouts/Layout.astro";
 import TournamentRegistrationForm from "../components/TournamentRegistrationForm.astro";
 ---
 
-<Layout title="Soccer Tournament Registration">
-  <div class="max-w-4xl mx-auto">
-    <div class="mb-8 text-center">
-      <h1 class="text-3xl font-medium mb-3 text-[#20455E]">Soccer Tournament Registration</h1>
-      <p class="text-gray-500 max-w-xl mx-auto text-sm">
-        Fill out the form below to register your team for the upcoming soccer tournament.
-      </p>
+<Layout
+  title="Signal Festival Registration"
+  description="Reserve passes for Signal Festival, an immersive music and technology weekend powered by Wix Headless registration."
+>
+  <section class="festival-hero">
+    <div class="site-shell hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">July 18-20, 2026 - Pier 42, Brooklyn</p>
+        <h1>Signal Festival</h1>
+        <p class="hero-lede">
+          Three nights of live coding, spatial audio, installation art, and
+          after-dark workshops for teams building the next layer of culture.
+        </p>
+        <div class="hero-actions" aria-label="Festival actions">
+          <a href="#registration" class="action-primary">Reserve a pass</a>
+          <a href="#program" class="action-secondary">View program</a>
+        </div>
+        <dl class="signal-metrics" aria-label="Festival highlights">
+          <div>
+            <dt>42</dt>
+            <dd>performances</dd>
+          </div>
+          <div>
+            <dt>18</dt>
+            <dd>labs</dd>
+          </div>
+          <div>
+            <dt>3</dt>
+            <dd>stages</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="signal-visual" aria-label="Signal Festival pass preview">
+        <div class="visual-topline">
+          <span>Live capacity</span>
+          <strong>74%</strong>
+        </div>
+        <div class="stage-readout">
+          <span class="readout-bar tall"></span>
+          <span class="readout-bar medium"></span>
+          <span class="readout-bar short"></span>
+          <span class="readout-bar peak"></span>
+          <span class="readout-bar medium"></span>
+          <span class="readout-bar tall"></span>
+          <span class="readout-bar short"></span>
+          <span class="readout-bar peak"></span>
+        </div>
+        <div class="pass-stack">
+          <div class="pass-card pass-card-main">
+            <span>Headless Pass</span>
+            <strong>SIGNAL-26</strong>
+          </div>
+          <div class="pass-card pass-card-sub">
+            <span>Workshop lane</span>
+            <strong>Spatial Audio Lab</strong>
+          </div>
+        </div>
+        <div class="visual-note">
+          Wix Headless captures registrations, segments pass holders by track,
+          and gives the festival team clean data for check-in and follow-up.
+        </div>
+      </div>
     </div>
-    
-    <TournamentRegistrationForm />
-  </div>
+  </section>
+
+  <section id="program" class="program-section">
+    <div class="site-shell">
+      <div class="section-heading">
+        <p class="eyebrow">Program rhythm</p>
+        <h2>Built for high-energy signups and fast track selection.</h2>
+      </div>
+      <div class="program-grid">
+        <article>
+          <span>01</span>
+          <h3>Immersive sets</h3>
+          <p>Reserve access to live AV performances, projection rooms, and late-night DJ handoffs.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Maker labs</h3>
+          <p>Route registrants into hands-on sessions for AI sound design, sensors, and creative tooling.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Credential flow</h3>
+          <p>Use Wix Forms submissions as the source for confirmations, guest lists, and track-aware follow-up.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="registration" class="registration-section">
+    <div class="site-shell registration-grid">
+      <aside class="registration-copy">
+        <p class="eyebrow">Registration</p>
+        <h2>Pick your lane. We will hold the signal.</h2>
+        <p>
+          This Headless flow keeps the festival front end expressive while Wix
+          manages the structured registration data behind the scenes.
+        </p>
+        <ul>
+          <li>Pass and track details arrive in Wix Forms.</li>
+          <li>Required fields stay enforced before submission.</li>
+          <li>Success routing is ready for confirmation messaging.</li>
+        </ul>
+      </aside>
+
+      <TournamentRegistrationForm class="signal-registration-form" />
+    </div>
+  </section>
 </Layout>
